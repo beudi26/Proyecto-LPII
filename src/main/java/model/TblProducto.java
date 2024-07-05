@@ -25,12 +25,11 @@ public class TblProducto implements Serializable {
 
 	private String dosificacion;
 
-	private byte estado;
+	private boolean estado;
 
 	private String fabricante;
 
-	@Temporal(TemporalType.DATE)
-	private Date fechacad;
+	private String fechacad;
 
 	private String nombre;
 
@@ -73,11 +72,11 @@ public class TblProducto implements Serializable {
 		this.dosificacion = dosificacion;
 	}
 
-	public byte getEstado() {
+	public boolean getEstado() {
 		return this.estado;
 	}
 
-	public void setEstado(byte estado) {
+	public void setEstado(boolean estado) {
 		this.estado = estado;
 	}
 
@@ -89,11 +88,11 @@ public class TblProducto implements Serializable {
 		this.fabricante = fabricante;
 	}
 
-	public Date getFechacad() {
+	public String getFechacad() {
 		return this.fechacad;
 	}
 
-	public void setFechacad(Date fechacad) {
+	public void setFechacad(String fechacad) {
 		this.fechacad = fechacad;
 	}
 

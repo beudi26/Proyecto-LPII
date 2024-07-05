@@ -95,7 +95,7 @@
                 </tr>
                 <tr>
                     <td>Fecha de Caducidad</td>
-                    <td><input type="date" name="fecha_caducidad" required></td>
+                    <td><input type="date" name="fechacad" required></td>
                 </tr>
                 <tr>
                     <td>Fabricante</td>
