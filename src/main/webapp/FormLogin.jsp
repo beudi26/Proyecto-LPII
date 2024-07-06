@@ -75,6 +75,7 @@
     <h1>Formulario de inicio de sesión</h1>
 
     <form action="login" method="post">
+    <input type="hidden" name="action" value="login">
         <div class="form-group">
             <label for="usuario">Usuario:</label>
             <input type="text" id="usuario" name="usuario" required>
@@ -87,6 +88,9 @@
             <input type="submit" value="Login">
         </div>
     </form>
+    <div class="form-group">
+            <p>¿No tienes una cuenta? <a href="FormRegistrarUsuario.jsp">Regístrate aquí</a></p>
+        </div>
 </div>
 
 </body>

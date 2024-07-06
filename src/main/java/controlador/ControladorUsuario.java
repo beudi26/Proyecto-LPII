@@ -37,6 +37,30 @@ public class ControladorUsuario extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String action = request.getParameter("action");
+        if ("login".equals(action)) {
+            handleLogin(request, response);
+        } else if ("register".equals(action)) {
+            handleRegister(request, response);
+        }
+	}//fin del metodo doPost
+	
+	private void handleRegister(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String usuario = request.getParameter("usuario");
+		String password = request.getParameter("password");
+		
+		TblUsuario usuarios = new TblUsuario();
+		ClassUsuarioImp crud = new ClassUsuarioImp();
+		
+		usuarios.setUsuario(usuario);
+		usuarios.setPassword(password);
+		crud.RegistrarUsuario(usuarios);
+		
+		request.getRequestDispatcher("/FormLogin.jsp").forward(request, response);
+		
+	}
+
+	protected void handleLogin(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ClassUsuarioImp crud = new ClassUsuarioImp();
 		
 		String usuario = request.getParameter("usuario");

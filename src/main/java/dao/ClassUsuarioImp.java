@@ -23,17 +23,6 @@ public class ClassUsuarioImp implements IUsuario{
 	}//fin del metodo registrar
 
 	@Override
-	public TblUsuario BuscarUsuario(TblUsuario usuario) {
-		EntityManagerFactory fabr=Persistence.createEntityManagerFactory("ProyectoldpcibertecJPA");
-		EntityManager em=fabr.createEntityManager();
-		em.getTransaction().begin();
-		TblUsuario bususuario=em.find(TblUsuario.class,usuario.getIdusuario());
-		em.getTransaction().commit();
-		em.close();
-		return bususuario;
-	}//fin del metodo buscar
-
-	@Override
 	public TblUsuario validarUsuario(String usuario, String password) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("ProyectoldpcibertecJPA");
 		EntityManager em = emf.createEntityManager();
