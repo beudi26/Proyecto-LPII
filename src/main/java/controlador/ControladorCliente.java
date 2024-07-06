@@ -9,9 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import dao.ClassClienteImp;
-import dao.ClassProductoImp;
 import model.TblCliente;
-import model.TblProducto;
 
 /**
  * Servlet implementation class ControladorCliente
@@ -80,33 +78,30 @@ public class ControladorCliente extends HttpServlet {
 		String email = request.getParameter("email");
 		String sexo = request.getParameter("sexo");
 		
-		List<TblProducto> listadoproducto=null;
+		List<TblCliente> listadocliente=null;
 		
-		TblProducto producto=new TblProducto();
-		ClassProductoImp crud=new ClassProductoImp();
+		TblCliente cliente=new TblCliente();
+		ClassClienteImp crud=new ClassClienteImp();
 		
-		producto.setNombre(nombre);
-		producto.setPrecioventa(precioventa);
-		producto.setPreciocompra(preciocompra);
-		producto.setEstado(estado);
-		producto.setCategoria(categoria);
-		producto.setDosificacion(dosificacion);
-		producto.setFechacad(fechacad);
-		producto.setFabricante(fabricante);
-		producto.setDescrip(descripcion);
+		cliente.setNombre(nombre);
+		cliente.setApellido(apellido);
+		cliente.setTelf(telefono);
+		cliente.setDni(dni);
+		cliente.setEmail(email);
+		cliente.setSexo(sexo);
 		if(codigo!=null){
 			int cod=Integer.parseInt(codigo);
-			producto.setIdproducto(cod);
-			crud.ActualizarProducto(producto);
-			listadoproducto=crud.ListarProducto();
+			cliente.setIdcliente(cod);
+			crud.ActualizarCliente(cliente);
+			listadocliente=crud.ListarCliente();
 			
 		}else{	
-		crud.RegistrarProducto(producto);
-		listadoproducto=crud.ListarProducto();
+		crud.RegistrarCliente(cliente);
+		listadocliente=crud.ListarCliente();
 		
 		} //fin del else...
-		request.setAttribute("listadoproductos",listadoproducto);
-		request.getRequestDispatcher("/ListadoProducto.jsp").forward(request, response);
+		request.setAttribute("listadoclientes",listadocliente);
+		request.getRequestDispatcher("/ListadoCliente.jsp").forward(request, response);
 	}
 
 }
