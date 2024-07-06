@@ -5,6 +5,64 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Actualizar Empleado</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #333333;
+    }
+    
+    form {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border: 2px solid #dddddd;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    
+    table, th, td {
+        border: 1px solid #dddddd;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+    
+    input[type="text"] {
+        width: calc(100% - 20px); /* Ajustar el ancho para el borde */
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 4px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
 </head>
 <body>
 <h1 align="center">Actualizar Empleado</h1>

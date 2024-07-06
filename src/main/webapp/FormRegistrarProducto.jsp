@@ -9,6 +9,10 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
+            background-image: url('imagenes/fondo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
         }
         h1 {
             color: #333;
@@ -86,11 +90,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Categoría</td>
+                    <td>Categoria</td>
                     <td><input type="text" name="categoria" placeholder="Ej: Medicamento, Suplemento, etc." required></td>
                 </tr>
                 <tr>
-                    <td>Dosificación</td>
+                    <td>Dosificacion</td>
                     <td><input type="text" name="dosificacion" placeholder="Ej: 500mg, 20ml, etc." required></td>
                 </tr>
                 <tr>
@@ -102,7 +106,7 @@
                     <td><input type="text" name="fabricante" placeholder="Ingrese el nombre del fabricante" required></td>
                 </tr>
                 <tr>
-                    <td>Descripción</td>
+                    <td>Descripcion</td>
                     <td><textarea name="descripcion" rows="4" placeholder="Describa el producto"></textarea></td>
                 </tr>
                 <tr>

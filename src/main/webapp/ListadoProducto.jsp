@@ -12,6 +12,54 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Listado de Productos</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    h1, h2 {
+        text-align: center;
+        color: #333333;
+    }
+    
+    table {
+        width: 95%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        border: 2px solid #dddddd;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #dddddd;
+    }
+    
+    th {
+        background-color: #f2f2f2;
+        color: #333333;
+    }
+    
+    td {
+        background-color: #ffffff;
+    }
+    
+    td.actions {
+        background-color: #f4f4f9;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #007bff;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
 </head>
 <body>
 <h1 align="center">Listado de Productos</h1>
@@ -64,6 +112,8 @@ if(listadoproducto !=null){
 %>
 
 </table>
-
+<h3 align="center">
+<a href="index.jsp">Ir al Inicio</a>
+</h3>
 </body>
 </html>
