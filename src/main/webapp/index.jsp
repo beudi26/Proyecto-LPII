@@ -110,6 +110,12 @@
 		color:blue;font-size:24px" class="btn btn-primary">
 		Mostrar listado de Clientes</a>
 		</h2>
+		
+		<h2  align="center">
+		<a href="ControladorEmpleado?accion=Listar" style="text-decoration:none;
+		color:blue;font-size:24px" class="btn btn-primary">
+		Mostrar listado de Empleados</a>
+		</h2>
 
     <footer>
         <p>&copy; 2024 Farmacia Salud. Todos los derechos reservados.</p>

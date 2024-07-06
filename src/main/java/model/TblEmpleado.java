@@ -2,7 +2,6 @@ package model;
 
 import java.io.Serializable;
 import javax.persistence.*;
-import java.util.Date;
 
 
 /**
@@ -25,8 +24,7 @@ public class TblEmpleado implements Serializable {
 
 	private String email;
 
-	@Temporal(TemporalType.DATE)
-	private Date fechaing;
+	private String fechaing;
 
 	private String nacionalidad;
 
@@ -71,11 +69,11 @@ public class TblEmpleado implements Serializable {
 		this.email = email;
 	}
 
-	public Date getFechaing() {
+	public String getFechaing() {
 		return this.fechaing;
 	}
 
-	public void setFechaing(Date fechaing) {
+	public void setFechaing(String fechaing) {
 		this.fechaing = fechaing;
 	}
 
