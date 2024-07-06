@@ -98,6 +98,11 @@
             <p>Tu fuente de confianza para todos tus medicamentos y productos de bienestar.</p>
         </section>
     </main>
+     <h2  align="center">
+		<a href="ControladorProducto?accion=Listar" style="text-decoration:none;
+		color:blue;font-size:24px" class="btn btn-primary">
+		Mostrar listado de Productos</a>
+		</h2>
 
     <footer>
         <p>&copy; 2024 Farmacia Salud. Todos los derechos reservados.</p>

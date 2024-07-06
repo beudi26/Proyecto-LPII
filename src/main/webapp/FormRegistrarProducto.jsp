@@ -80,8 +80,8 @@
                     <td>Estado</td>
                     <td>
                         <select name="estado" required>
-                            <option value="disponible">Disponible</option>
-                            <option value="no_disponible">No Disponible</option>
+                            <option value="true">Disponible</option>
+                            <option value="false">No Disponible</option>
                         </select>
                     </td>
                 </tr>
